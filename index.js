@@ -4,7 +4,7 @@ const port = 3000;
 
 // Define the static file path
 // app.use(express.static(__dirname+'/public'));
-app.use('/public/images/', express.static(__dirname + "/public/images"));
+app.use('/src/public/images/', express.static(__dirname + "/src/public/images"));
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
